@@ -1,0 +1,35 @@
+## 疑問点
+
+- あれ、`inputContactNumber`で`return inputValues`する意味がわからない...
+- なんなら引数に`inputValues`がある意味もわかってない
+- `municipalities`初めて聞いた
+- `inputContactNumber`と`inputDeliveryAddress`の返り値がある意味は？
+- "入力、送信すると、入力内容が送信される"
+  - まずこれなに？
+    - `const [mockFn, onSubmit] = mockHandleSubmit();`
+  - 現時点の予想では、`onSubmit`が関数がわり
+  - `mockFn`が返り値に当たる？
+  - `clickSubmit()`で`onSubmit`を呼ぶ形になるのかな？
+  - 当たるかな？
+- > onSubmit で送信される値の検証には、モック関数を使用しています
+  - めんっっっっっっどくさ！！！！
+  - いやまあそうしかできんのだろうけど！！！
+  - あまりにもめんどいぞ Form の検証！！！
+  - 知識の総集編やん
+  - これ技術的に定着すんのか？自分も世間も
+  - なんかまだ発展途上感あるくない？
+  - 文句言わずにやります
+- `event: React.FormEvent<HTMLFormElement>`submit だからねわかるうん
+- `[k: string]`の`k`は`key`で`key`が`string`だねってことだよね
+- `unknown`ってこういう場合に使うんだ
+  - 確かに今この時点では`unknown`だけど、入るのは`string`だよね
+- あー.......そっか、この関数の返り値は`[mockFn, onSubmit]`か
+- 値が入る`mockFn`と値を返す`onSubmit`ってこと？
+- はて？
+  - `getGroupByName`をなぜ使ったのでしょう
+  - `screen.getByRole("group", {name: ''})`じゃダメなの？
+  - ンンン？
+- `inputContactNumber()`に`await`がつくのは関数内で`user`使ってるからだよね
+- はいを選択、入力、送信すると入力内容が送信される
+  - このテスト、上のテスト参考に自分でかけた〜ぱちぱち〜
+  - ゆうてほぼ同じ内容
